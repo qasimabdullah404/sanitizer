@@ -1,2 +1,4 @@
 sample.log
-sanitize.log
+sanitized.log
+coverage.out
+certs
