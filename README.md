@@ -42,4 +42,5 @@ Clone the repo:
 ```bash
 git clone https://github.com/qasimabdullah404/sanitizer.git
 cd sanitizer
+mkdir certs && openssl req -x509 -newkey rsa:2048 -nodes -keyout certs/privkey.pem -out certs/fullchain.pem -days 365 -subj "/CN=localhost"
 docker compose up --build -d
